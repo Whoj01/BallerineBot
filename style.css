@@ -51,23 +51,24 @@ body {
 /*===  header ============================ */
 
 header {
-  width: 100%;
+  display: flex;
+
   height: var(--header-height);
   border-bottom: 0.4px solid #ecd6c4;
+  justify-content: center;
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  flex: 1;
   padding: 0 2rem;
 }
 
 header ul li {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 header ul li a.subtitle {
@@ -123,7 +124,6 @@ main button {
   display: flex;
   align-items: center;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .information h1 {
@@ -156,9 +156,67 @@ footer {
 }
 
 @media (max-width: 550px) {
+  nav ul li {
+    display: none;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
-    align-content: center;
+  }
+
+  .information p {
+    margin: 2rem 2rem;
+  }
+
+  section .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    margin-top: 2rem;
+  }
+
+  main button {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: none;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .information p {
+    margin: 2rem 2rem;
+  }
+
+  section .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    margin-top: 2rem;
+  }
+
+  main button {
+    display: flex;
+    margin: 0 auto;
   }
 }
