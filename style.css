@@ -74,6 +74,12 @@ header ul li a.subtitle {
   font: 400 var(--body-size) var(--body-font);
   color: white;
   gap: 2rem;
+  transition: all ease 0.3s;
+}
+
+header ul li a.subtitle:hover {
+  color: #ecd6c4;
+  transform: scale(1.1);
 }
 
 /*===  main ============================ */
